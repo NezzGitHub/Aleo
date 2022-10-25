@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel='stylesheet' href='https://unpkg.com/flickity@2/dist/flickity.min.css'>
+  <link rel='stylesheet' href='https://unpkg.com/tailwindcss@1.2.0/dist/tailwind.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="">
+  <div class="container-2xl">
+    <nav class="to-front shadow-2xl grid grid-cols-1 opacity-100 sticky top-0 bg-left bg-[url('https://png.pngtree.com/png-vector/20191107/ourmid/pngtree-sneakers-vector-seamless-pattern-png-image_1959232.jpg')]">
+      <div class="flex bg-[#f5f5f7]/90">
+        <div class="w-12 my-4 ml-5 mr-48 bg-gray-300/50 hover:bg-gray-300/80 transition ease-out p-1 rounded-md">
+          <img class="" src="assets/img/logo.png" alt="">
+        </div>
+        <div class="space-x-4 gap-8 my-5 mx-auto">
+          <a href="adidas.html" class="font-[400] py-4 hover:border-b-4 rounded-tr-lg rounded-tl-lg border-black hover:pb-3 transition-all duration-50 ease-in hover:delay-50">SHOP</a>
+          <a href="compass.html" class="font-[400] py-4 hover:border-b-4 rounded-tr-lg rounded-tl-lg border-black hover:pb-3 transition-all duration-50 ease-in hover:delay-50">BRANDS</a>
+          <a href="vans.html" class="font-[400] py-4 hover:border-b-4 rounded-tr-lg rounded-tl-lg border-black hover:pb-3 transition-all duration-50 ease-in hover:delay-50">ABOUT</a>
+        </div>
+        <div class="my-5 mr-5">
+          <input class="bg-gray-300/50 hover:bg-gray-300/80 font-[350] rounded-md px-1.5 transition ease-in-out placeholder:text-gray-800" type="text" name="" id=""  placeholder="Search...">
+          <button class="transition ease-in-out bg-gray-300/50 hover:bg-gray-300/80 rounded-md px-1"><i class="fa fa-search text-gray-800" aria-hidden="true"></i></button>
+        </div>
+      </div> 
+    </nav>
+   
+    <div class="">
+    <div class="container-mx p-10  m-10 ring ring-gray-500 rounded-lg ">
+      <div class=" grid gap-4 grid-cols-2 fade-out to-back">
+        <img class="animate__animated animate__fadeInLeft animate__delay-1s " src="assets/img/textshoes.png" alt="">
+        <img class="animate__animated animate__fadeInRight animate__delay-1s " src="assets/img/logo.png" alt="">
+      </div>
+      <div class="m-10 fade-out to-back">
+        <p class="font-serif text-2xl animate__animated animate__fadeInLeft animate__delay-2s">WELCOME TO ALEO</p>
+        <p class="font-serif text-3xl animate__animated animate__fadeInLeft animate__delay-2s">TRSUTED, AUTHENTIC, AND EFFICIENT</p>
+      </div>
+      </div>
+    </div>
+    <div class="p-10 m-20">
+      <img class="" src="https://sepatucompass.com/_next/static/images/desktop-3ddc9c47fbbd4ce541f66f51845a4604.jpg" alt="">
+      <p class="font-serif mt-10 font-bold ml-14">FZZKINGALEO LIMITED</p>
+      <button class="m-10 bg-black font-serif text-white hover:text-gray-200 rounded-full py-4 px-20 col-start-1 col-end-7 ">View Detail</button>
+      <p class="ring ring-1 ring-black"></p>
+    </div>
+    <main class="text-white flex items-center justify-center bg-gray-100 m-20 rounded-lg">
+      <div class="container grid grid-cols-1 py-20 px-[330px]">
+        <div class="flex py-12 justify-center">
+          <a class="px-2 text-lg uppercase font-bold text-black hover:text-gray-800 font-serif ">Timeless Choice</a>
+        </div>    
+          <div class="grid grid-cols-1 grid-rows-1" x-data="carousel()" x-init="init()">
+            <div class="col-start-1 row-start-1  z-20 flex items-center justify-center pointer-events-none ">
+              <h1 class="absolute text-2xl uppercase text-black "
+                  x-show="active == 0"
+                  x-transition:enter="transition ease-out duration-300"
+                  x-transition:enter-start="opacity-0 transform translate-y-12"
+                  x-transition:enter-end="opacity-100 transform translate-y-0"
+                  x-transition:leave="transition ease-out duration-300"
+                  x-transition:leave-start="opacity-100 transform translate-y-0"
+                  x-transition:leave-end="opacity-0 transform -translate-y-12"
+              >Nike Air Force 1</h1>
+              <h1 class="absolute text-2xl uppercase text-white tracking-widest"
+                  x-show="active == 1"
+                  x-transition:enter="transition ease-out duration-300"
+                  x-transition:enter-start="opacity-0 transform translate-y-12"
+                  x-transition:enter-end="opacity-100 transform translate-y-0"
+                  x-transition:leave="transition ease-out duration-300"
+                  x-transition:leave-start="opacity-100 transform translate-y-0"
+                  x-transition:leave-end="opacity-0 transform -translate-y-12"
+              >Compass</h1>
+              <h1 class="absolute text-2xl uppercase text-black tracking-widest"
+                  x-show="active == 2"
+                  x-transition:enter="transition ease-out duration-300"
+                  x-transition:enter-start="opacity-0 transform translate-y-12"
+                  x-transition:enter-end="opacity-100 transform translate-y-0"
+                  x-transition:leave="transition ease-out duration-300"
+                  x-transition:leave-start="opacity-100 transform translate-y-0"
+                  x-transition:leave-end="opacity-0 transform -translate-y-12"
+              >Vans Old Skoll</h1>
+              <h1 class="absolute text-2xl uppercase text-black tracking-widest"
+                  x-show="active == 3"
+                  x-transition:enter="transition ease-out duration-300"
+                  x-transition:enter-start="opacity-0 transform translate-y-12"
+                  x-transition:enter-end="opacity-100 transform translate-y-0"
+                  x-transition:leave="transition ease-out duration-300"
+                  x-transition:leave-start="opacity-100 transform translate-y-0"
+                  x-transition:leave-end="opacity-0 transform -translate-y-12"
+              >Adidas NY 90</h1>
+            </div>
