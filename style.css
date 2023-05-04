@@ -1,0 +1,13 @@
+.flickity-viewport {
+  height: 500px !important;
+}
+
+.to-back {
+  z-index: -1;
+  position: relative;
+}
+
+.to-front {
+  z-index: 2147483647;
+  position: relative;
+}
